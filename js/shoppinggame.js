@@ -5,18 +5,35 @@ const score = 0;
 const items = 0;
 
 // Define the player object here
-let player = { 
-getCurrentScore(score),
-addPoints()
-deductPoints()
+let player = { name:name, score:score, items:items
+getCurrentScore = (score) => {
+    return score;
+},
+addPoints = (points) => {
+    return score + points
+},
+deductPoints = (points) => {
+    return score - points
+},
 }
 // Define the Product class - write the Constructor function for Product class here
+class Product {
+    constructor(id, name, price, expiryDate) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.expiryDate = expiryDate;
+    }
+}
 
 // Complete the dateDiff function
 const dateDiff = (date1, date2) => {};
-
+    let Difference_In_Time = date2.getTime() - date1.getTime();
+    let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
 // Here, use Object.defineProperty to create property - daysToExpire
-
+Object.defineProperty(Product, daysToExpire), {
+    
+}
 // Add method getDetails to Product here
 
 // Define the MagicProduct class here
