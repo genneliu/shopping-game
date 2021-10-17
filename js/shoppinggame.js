@@ -26,13 +26,11 @@ class Product {
 // Complete the dateDiff function
 const dateDiff = (date1, date2) => {
     let Difference_In_Time = date2.getTime() - date1.getTime();
-    let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+    let daysToExpire = Difference_In_Time / (1000 * 3600 * 24);
 };
 // Here, use Object.defineProperty to create property - daysToExpire
 Object.defineProperty(Product, daysToExpire), {
-    daysToExpire = get dateDiff(Difference_In_Days) {
-        return Difference_In_Days;
-    }
+    get dateDiff() {daysToExpire};
 };
 // Add method getDetails to Product here
 Object.defineProperty(Product, sentence), {
